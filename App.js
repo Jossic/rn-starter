@@ -9,9 +9,9 @@ const navigator = createStackNavigator(
 		Components: ComponentsScreen,
 	},
 	{
-		initialRouteName: 'Home',
+		initialRouteName: 'Components',
 		defaultNavigationOptions: {
-			title: 'App',
+			title: 'YEY App',
 		},
 	}
 );
