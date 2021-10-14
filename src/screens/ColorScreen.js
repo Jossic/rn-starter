@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 const randomRgb = () => {
@@ -9,15 +10,26 @@ const randomRgb = () => {
 };
 
 const ColorScreen = () => {
+	const [colors, setColors] = useState([]);
 	return (
 		<View>
-			<Button title='Add a color' />
-			<View
-				style={{
-					height: 100,
-					width: 100,
-					backgroundColor: randomRgb(),
-				}}></View>
+			<Button
+				title='Add a color'
+				onPress={() => setColors([...colors, randomRgb()])}
+			/>
+			{colors.map((color) => {
+				return (
+					<View
+						keyExtractor={(color) => {
+							return color.id;
+						}}
+						style={{
+							height: 100,
+							width: 100,
+							backgroundColor: color,
+						}}></View>
+				);
+			})}
 		</View>
 	);
 };
