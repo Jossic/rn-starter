@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, StyleSheet, View } from 'react-native';
 
 const ComponentsScreen = () => {
-	const myName = <Text style={{ fontSize: '20' }}>My name is Jossic</Text>;
+	const myName = <Text style={{ fontSize: 20 }}>My name is Jossic</Text>;
 	return (
 		<View>
 			<Text style={styles.textStyle}>
