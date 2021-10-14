@@ -14,7 +14,7 @@ const HomeScreen = ({ navigation }) => {
 				onPress={() => navigation.navigate('List')}
 			/>
 			<Button
-				title='Go to list images'
+				title='Go to images demo'
 				onPress={() => navigation.navigate('Image')}
 			/>
 		</View>
