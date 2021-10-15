@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import ColorCounter from '../components/ColorCounter';
 
 const SquareScreen = () => {
+	const pallier = 30;
 	const [red, setRed] = useState(0);
 	const [green, setGreen] = useState(0);
 	const [blue, setBlue] = useState(0);
@@ -11,18 +12,18 @@ const SquareScreen = () => {
 		<View>
 			<Text style={styles.text}>Square Screen</Text>
 			<ColorCounter
-				onIncrease={() => setRed(red + 10)}
-				onDecrease={() => setRed(red - 10)}
+				onIncrease={() => setRed(red + pallier)}
+				onDecrease={() => setRed(red - pallier)}
 				color='Rouge'
 			/>
 			<ColorCounter
-				onIncrease={() => setGreen(green + 10)}
-				onDecrease={() => setGreen(green - 10)}
+				onIncrease={() => setGreen(green + pallier)}
+				onDecrease={() => setGreen(green - pallier)}
 				color='Vert'
 			/>
 			<ColorCounter
-				onIncrease={() => setBlue(blue + 10)}
-				onDecrease={() => setBlue(blue - 10)}
+				onIncrease={() => setBlue(blue + pallier)}
+				onDecrease={() => setBlue(blue - pallier)}
 				color='Bleu'
 			/>
 			<Text style={styles.text2}>{`rgb(${red},${green},${blue})`}</Text>
