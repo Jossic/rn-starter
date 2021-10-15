@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 const SquareScreen = () => {
 	return (
 		<View>
+			<Text style={styles.text}>Square Screen</Text>
 			<Text></Text>
 		</View>
 	);
@@ -11,4 +12,6 @@ const SquareScreen = () => {
 
 export default SquareScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+	text: { fontSize: 25, textAlign: 'center', marginTop: 20 },
+});
