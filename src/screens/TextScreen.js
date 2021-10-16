@@ -5,7 +5,11 @@ const TextScreen = () => {
 	return (
 		<View>
 			<Text style={styles.text}>Text Screen</Text>
-			<TextInput style={styles.input}>Text Screen</TextInput>
+			<TextInput
+				style={styles.input}
+				autoCapitalize='none'
+				autoCorrect={false}
+			/>
 		</View>
 	);
 };
