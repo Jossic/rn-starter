@@ -13,7 +13,6 @@ const reducer = (state, action) => {
 		default:
 			return state;
 	}
-	return { ...state, count: state.count + action.payload };
 };
 
 const CounterScreen = () => {
